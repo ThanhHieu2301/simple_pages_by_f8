@@ -1,0 +1,293 @@
+$theme: black;
+$word: white;
+$title: 25px;
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+#header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  background-color: $theme;
+  #nav {
+    width: 100%;
+    list-style-type: none;
+    > li {
+      display: inline-block;
+      > a {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+    li {
+      // display: inline;
+      position: relative;
+      &:hover #subnav {
+        display: block;
+      }
+      a {
+        // color: $word;
+        text-decoration: none;
+        padding: 0px 20px;
+        line-height: 50px;
+        display: block;
+        &:hover {
+          background-color: gray;
+          color: black;
+        }
+      }
+    }
+    #subnav {
+      display: none;
+      position: absolute;
+      background-color: white;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        a {
+          color: #000;
+        }
+      }
+      li + li {
+        margin-top: 10px; // Giảm khoảng cách giữa các phần tử trong subnav
+      }
+    }
+  }
+}
+// thanh tieu de
+#slider {
+  // margin-top: 40px;
+  position: relative;
+  padding-top: 50%;
+  background: url("img/pic_2.jpg") top center / cover no-repeat;
+  .text-content {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 30px;
+    width: 100%;
+    .slide-heading {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .slide-heading-description {
+      margin-top: 5px;
+    }
+  }
+}
+//slide anh ben duoi thanh tieu de
+#content {
+  // margin: 40px;
+  width: 100%;
+  padding: 40px 0;
+  margin-left: auto;
+  margin-right: auto;
+  .main-content {
+    margin: 0 25%;
+    // text-align: center;
+    // height: 40px;
+    .title-content {
+      text-align: center;
+      text-transform: uppercase; // làm chữ in hoa
+      margin-bottom: 10px;
+      font-size: larger;
+    }
+    .main-title-content {
+      text-align: center;
+      font-style: oblique;
+      margin-bottom: 7px;
+      opacity: 0.8; // làm mờ chữ
+    }
+    .description-content {
+      // margin: 0 20px;
+      text-align: justify;
+    }
+  }
+  // mo ta the band
+  .member-list {
+    margin: 0 25%;
+    .member-item {
+      width: 33.33%;
+      float: left;
+      text-align: center;
+      .member-name {
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+      #member-img {
+        border-radius: 5%;
+        height: 150px;
+      }
+    }
+  }
+  // 3 pic
+}
+// mo ta the band
+#place {
+  display: inline-block;
+  background-color: #000;
+  padding-bottom: 100px;
+  width: 100%;
+  #time_title {
+    margin: 50px 25%;
+    color: white;
+    .time-title-name {
+      text-align: center;
+      font-size: $title;
+    }
+    .time-title-subname {
+      text-align: center;
+      margin-top: 50px;
+      opacity: 0.5;
+      font-style: oblique;
+    }
+    #month_time {
+      font-size: 20px;
+      background-color: white;
+      margin: 20px 0;
+      color: #000;
+      width: 100%;
+      li {
+        border-bottom: 1px solid black;
+        padding: 10px 5px;
+        .sold-out {
+          background-color: red;
+          color: white;
+          padding: 2px 8px;
+          margin-left: 10px;
+        }
+        .quantity {
+          background-color: #000;
+          color: white;
+          padding: 0 5px;
+          float: right;
+          border-radius: 50%;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  #place_item {
+    margin: 0 24.5% 0;
+
+    .place-item-info {
+      float: left;
+      width: 33.333%;
+      padding: 0 8px;
+      box-sizing: border-box;
+      #img_place {
+        width: 100%;
+      }
+      .place-body {
+        background-color: white;
+        #name_place {
+          margin: 20px 10px 0 10px;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        #time_start {
+          margin: 20px 10px 0 10px;
+          text-decoration: none;
+          opacity: 0.5;
+        }
+        #description_place {
+          margin: 20px 10px 0 10px;
+          text-decoration: none;
+        }
+        #btn-buy {
+          display: inline-block;
+          margin: 20px 10px 20px 10px;
+          padding: 10px;
+          width: 100px;
+          text-decoration: none;
+          background-color: #000;
+
+          color: white;
+          &:hover {
+            background-color: gray;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+// tour dates dat ve
+#contact {
+  margin-top: 50px;
+  margin: 0 25%;
+  #title-contact {
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+  }
+  #slogan-contact {
+    margin-top: 20px;
+    text-align: center;
+    font-style: oblique;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+
+  .mail {
+    .col {
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+    .col-half {
+      width: 50%;
+    }
+    .col-full {
+      width: 100%;
+    }
+    .contact-form {
+      .form-control {
+        width: 100%;
+        padding: 6px;
+        margin: 5px;
+        box-sizing: border-box;
+      }
+      #send-mail {
+        float: right;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+        &:hover {
+          background-color: gray;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+// lien lac gui mail
+#img-adr {
+  width: 100%;
+  #akira {
+    margin-top: 5%;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+#footer {
+  margin-top: 5%;
+  text-align: center;
+  #icon {
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  #source {
+    opacity: 0.5;
+    margin-bottom: 5%;
+  }
+}

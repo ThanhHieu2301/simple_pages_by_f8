@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+#header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+}
+#header #nav {
+  width: 100%;
+  list-style-type: none;
+}
+#header #nav > li {
+  display: inline-block;
+}
+#header #nav > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+#header #nav li {
+  position: relative;
+}
+#header #nav li:hover #subnav {
+  display: block;
+}
+#header #nav li a {
+  text-decoration: none;
+  padding: 0px 20px;
+  line-height: 50px;
+  display: block;
+}
+#header #nav li a:hover {
+  background-color: gray;
+  color: black;
+}
+#header #nav #subnav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#header #nav #subnav li a {
+  color: #000;
+}
+#header #nav #subnav li + li {
+  margin-top: 10px;
+}
+
+#slider {
+  position: relative;
+  padding-top: 50%;
+  background: url("img/pic_2.jpg") top center/cover no-repeat;
+}
+#slider .text-content {
+  position: absolute;
+  color: white;
+  text-align: center;
+  bottom: 30px;
+  width: 100%;
+}
+#slider .text-content .slide-heading {
+  font-weight: 600;
+  font-size: 20px;
+}
+#slider .text-content .slide-heading-description {
+  margin-top: 5px;
+}
+
+#content {
+  width: 100%;
+  padding: 40px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content .main-content {
+  margin: 0 25%;
+}
+#content .main-content .title-content {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: larger;
+}
+#content .main-content .main-title-content {
+  text-align: center;
+  font-style: oblique;
+  margin-bottom: 7px;
+  opacity: 0.8;
+}
+#content .main-content .description-content {
+  text-align: justify;
+}
+#content .member-list {
+  margin: 0 25%;
+}
+#content .member-list .member-item {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+#content .member-list .member-item .member-name {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+#content .member-list .member-item #member-img {
+  border-radius: 5%;
+  height: 150px;
+}
+
+#place {
+  display: inline-block;
+  background-color: #000;
+  padding-bottom: 100px;
+  width: 100%;
+}
+#place #time_title {
+  margin: 50px 25%;
+  color: white;
+}
+#place #time_title .time-title-name {
+  text-align: center;
+  font-size: 25px;
+}
+#place #time_title .time-title-subname {
+  text-align: center;
+  margin-top: 50px;
+  opacity: 0.5;
+  font-style: oblique;
+}
+#place #time_title #month_time {
+  font-size: 20px;
+  background-color: white;
+  margin: 20px 0;
+  color: #000;
+  width: 100%;
+}
+#place #time_title #month_time li {
+  border-bottom: 1px solid black;
+  padding: 10px 5px;
+}
+#place #time_title #month_time li .sold-out {
+  background-color: red;
+  color: white;
+  padding: 2px 8px;
+  margin-left: 10px;
+}
+#place #time_title #month_time li .quantity {
+  background-color: #000;
+  color: white;
+  padding: 0 5px;
+  float: right;
+  border-radius: 50%;
+  line-height: 20px;
+}
+#place #place_item {
+  margin: 0 24.5% 0;
+}
+#place #place_item .place-item-info {
+  float: left;
+  width: 33.333%;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+#place #place_item .place-item-info #img_place {
+  width: 100%;
+}
+#place #place_item .place-item-info .place-body {
+  background-color: white;
+}
+#place #place_item .place-item-info .place-body #name_place {
+  margin: 20px 10px 0 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#place #place_item .place-item-info .place-body #time_start {
+  margin: 20px 10px 0 10px;
+  text-decoration: none;
+  opacity: 0.5;
+}
+#place #place_item .place-item-info .place-body #description_place {
+  margin: 20px 10px 0 10px;
+  text-decoration: none;
+}
+#place #place_item .place-item-info .place-body #btn-buy {
+  display: inline-block;
+  margin: 20px 10px 20px 10px;
+  padding: 10px;
+  width: 100px;
+  text-decoration: none;
+  background-color: #000;
+  color: white;
+}
+#place #place_item .place-item-info .place-body #btn-buy:hover {
+  background-color: gray;
+  color: #000;
+}
+
+#contact {
+  margin-top: 50px;
+  margin: 0 25%;
+}
+#contact #title-contact {
+  margin-top: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: larger;
+}
+#contact #slogan-contact {
+  margin-top: 20px;
+  text-align: center;
+  font-style: oblique;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+#contact .mail .col {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+#contact .mail .col-half {
+  width: 50%;
+}
+#contact .mail .col-full {
+  width: 100%;
+}
+#contact .mail .contact-form .form-control {
+  width: 100%;
+  padding: 6px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+#contact .mail .contact-form #send-mail {
+  float: right;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+#contact .mail .contact-form #send-mail:hover {
+  background-color: gray;
+  color: #000;
+}
+
+#img-adr {
+  width: 100%;
+}
+#img-adr #akira {
+  margin-top: 5%;
+  width: 100%;
+  background-size: cover;
+}
+
+#footer {
+  margin-top: 5%;
+  text-align: center;
+}
+#footer #icon {
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+#footer #source {
+  opacity: 0.5;
+  margin-bottom: 5%;
+}/*# sourceMappingURL=sass_the_band.css.map */
