@@ -63,8 +63,7 @@ $title: 25px;
   // margin-top: 40px;
   position: relative;
   padding-top: 50%;
-  background: url("img/pic_2.jpg") top center /
-    cover no-repeat;
+  background: url("img/pic_2.jpg") top center / cover no-repeat;
   .text-content {
     position: absolute;
     color: white;
@@ -132,6 +131,7 @@ $title: 25px;
   display: inline-block;
   background-color: #000;
   padding-bottom: 100px;
+  width: 100%;
   #time_title {
     margin: 50px 25%;
     color: white;
