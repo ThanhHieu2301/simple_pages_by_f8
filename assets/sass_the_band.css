@@ -56,7 +56,7 @@
 #slider {
   position: relative;
   padding-top: 50%;
-  background: url("/60-days-to-learn-FE/assets/img/pic_2.jpg") top center/cover no-repeat;
+  background: url("img/pic_2.jpg") top center/cover no-repeat;
 }
 #slider .text-content {
   position: absolute;
